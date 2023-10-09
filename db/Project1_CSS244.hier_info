@@ -1,0 +1,232 @@
+|Project1_CSC244
+CLK => CLK.IN1
+CLK50MHZ => CLK50MHZ.IN2
+RES => RES.IN1
+Pen => Pen.IN1
+HFa => HFa.IN1
+Fa => Fa.IN1
+Item << <GND>
+Change[0] << <GND>
+Change[1] << <GND>
+Change[2] << <GND>
+Change[3] << <GND>
+Change[4] << <GND>
+Change[5] << <GND>
+Change[6] << <GND>
+out_CrrState[0] << seven_seg:comb_10.out_sig
+out_CrrState[1] << seven_seg:comb_10.out_sig
+out_CrrState[2] << seven_seg:comb_10.out_sig
+out_CrrState[3] << seven_seg:comb_10.out_sig
+out_CrrState[4] << seven_seg:comb_10.out_sig
+out_CrrState[5] << seven_seg:comb_10.out_sig
+out_CrrState[6] << seven_seg:comb_10.out_sig
+outBits[0] << StateBits:comb_11.O
+outBits[1] << StateBits:comb_11.O
+outBits[2] << StateBits:comb_11.O
+outBits[3] << StateBits:comb_11.O
+
+
+|Project1_CSC244|debouncer:comb_3
+A_noisy => Anext.IN1
+A_noisy => t_r.IN1
+A_noisy => t_r.IN1
+CLK50M => A~reg0.CLK
+CLK50M => COUNT[0].CLK
+CLK50M => COUNT[1].CLK
+CLK50M => COUNT[2].CLK
+CLK50M => COUNT[3].CLK
+CLK50M => COUNT[4].CLK
+CLK50M => COUNT[5].CLK
+CLK50M => COUNT[6].CLK
+CLK50M => COUNT[7].CLK
+CLK50M => COUNT[8].CLK
+CLK50M => COUNT[9].CLK
+CLK50M => COUNT[10].CLK
+CLK50M => COUNT[11].CLK
+CLK50M => COUNT[12].CLK
+CLK50M => COUNT[13].CLK
+CLK50M => COUNT[14].CLK
+CLK50M => COUNT[15].CLK
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|debouncer:comb_4
+A_noisy => Anext.IN1
+A_noisy => t_r.IN1
+A_noisy => t_r.IN1
+CLK50M => A~reg0.CLK
+CLK50M => COUNT[0].CLK
+CLK50M => COUNT[1].CLK
+CLK50M => COUNT[2].CLK
+CLK50M => COUNT[3].CLK
+CLK50M => COUNT[4].CLK
+CLK50M => COUNT[5].CLK
+CLK50M => COUNT[6].CLK
+CLK50M => COUNT[7].CLK
+CLK50M => COUNT[8].CLK
+CLK50M => COUNT[9].CLK
+CLK50M => COUNT[10].CLK
+CLK50M => COUNT[11].CLK
+CLK50M => COUNT[12].CLK
+CLK50M => COUNT[13].CLK
+CLK50M => COUNT[14].CLK
+CLK50M => COUNT[15].CLK
+A <= A~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|Encoder3_2:encoder3_2
+P => Mult4.IN1
+P => Mult2.IN0
+P => Mult0.IN0
+H => Mult2.IN1
+H => Mult4.IN0
+H => Mult0.IN1
+F => Mult1.IN1
+F => Mult5.IN1
+F => Mult3.IN1
+A[0] <= A.DB_MAX_OUTPUT_PORT_TYPE
+A[1] <= A.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|NextStateLogic:comb_5
+S[0] => S_next.IN1
+S[0] => S_next.IN1
+S[0] => S_next.IN1
+S[0] => S_next.IN1
+S[0] => S_next.IN1
+S[0] => S_next.IN1
+S[0] => S_next.IN1
+S[0] => S_next.IN1
+S[1] => S_next.IN1
+S[1] => S_next.IN1
+S[1] => S_next.IN1
+S[1] => S_next.IN1
+S[1] => S_next.IN1
+S[2] => S_next.IN0
+S[2] => S_next.IN0
+S[2] => S_next.IN0
+S[3] => S_next.IN1
+S[3] => S_next.IN1
+S[3] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN0
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+Out[0] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+Out[1] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+Out[2] <= Out.DB_MAX_OUTPUT_PORT_TYPE
+Out[3] <= S_next.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|D_FF_neg:comb_6
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|D_FF_neg:comb_7
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|D_FF_neg:comb_8
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|D_FF_neg:comb_9
+D => Q~reg0.DATAIN
+D => Qb~reg0.DATAIN
+CLKb => Qb~reg0.CLK
+CLKb => Q~reg0.CLK
+RSTb => Qb~reg0.PRESET
+RSTb => Q~reg0.ACLR
+Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
+Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|seven_seg:comb_10
+a[0] => Mult3.IN1
+a[0] => Mult6.IN1
+a[0] => Mult9.IN1
+a[0] => Mult13.IN1
+a[0] => Mult0.IN0
+a[0] => Mult4.IN0
+a[0] => Mult7.IN0
+a[0] => Mult10.IN0
+a[1] => Mult5.IN1
+a[1] => Mult12.IN1
+a[1] => Mult2.IN1
+a[1] => Mult8.IN0
+a[2] => Mult11.IN1
+a[2] => Mult1.IN0
+a[3] => Mult11.IN0
+a[3] => Mult1.IN1
+out_sig[0] <= Mult14.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[1] <= Mult15.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[2] <= Mult16.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[3] <= Mult17.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[4] <= Mult18.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[5] <= Mult19.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[6] <= Mult20.DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|StateBits:comb_11
+I[0] => O[0].DATAIN
+I[1] => O[1].DATAIN
+I[2] => O[2].DATAIN
+I[3] => O[3].DATAIN
+O[0] <= I[0].DB_MAX_OUTPUT_PORT_TYPE
+O[1] <= I[1].DB_MAX_OUTPUT_PORT_TYPE
+O[2] <= I[2].DB_MAX_OUTPUT_PORT_TYPE
+O[3] <= I[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

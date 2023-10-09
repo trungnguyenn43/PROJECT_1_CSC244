@@ -1,0 +1,77 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "out_CrrState[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrState[1]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrState[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrState[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrState[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrState[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrState[6]",
+					"strict" : false
+				},
+				{
+					"name" : "outBits[0]",
+					"strict" : false
+				},
+				{
+					"name" : "outBits[1]",
+					"strict" : false
+				},
+				{
+					"name" : "outBits[2]",
+					"strict" : false
+				},
+				{
+					"name" : "outBits[3]",
+					"strict" : false
+				},
+				{
+					"name" : "HFa",
+					"strict" : false
+				},
+				{
+					"name" : "Pen",
+					"strict" : false
+				},
+				{
+					"name" : "Fa",
+					"strict" : false
+				},
+				{
+					"name" : "CLK",
+					"strict" : false
+				},
+				{
+					"name" : "CLK50MHZ",
+					"strict" : false
+				},
+				{
+					"name" : "RES",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

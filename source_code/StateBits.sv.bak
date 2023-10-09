@@ -1,0 +1,4 @@
+
+module StateBits(
+	input logic P, H, F,
+	output logic 

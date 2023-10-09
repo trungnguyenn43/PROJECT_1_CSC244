@@ -1,0 +1,8 @@
+
+module Encoder3_2(
+		input logic P, H, F,
+		output [1:0] A,
+);
+
+
+endmodule

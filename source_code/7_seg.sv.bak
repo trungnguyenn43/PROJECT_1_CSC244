@@ -1,0 +1,38 @@
+
+module seven_seg(
+	input logic [4:0] a, input logic in_enable,
+	output logic [6:0] out_sig, output logic out_enable);
+	
+	logic [15:0] y;
+	
+	assign out_enable = in_enable;
+	
+	//Decoder -> change output combinations to cases
+	assign y[0] = (~a[3] * ~a[2] * ~a[1] * ~a[0]) * in_enable;
+	assign y[1] = (~a[3] * ~a[2] * ~a[1] * a[0]) * in_enable;
+	assign y[2] = (~a[3] * ~a[2] * a[1] * ~a[0]) * in_enable;
+	assign y[3] = (~a[3] * ~a[2] * a[1] * a[0]) * in_enable;
+	assign y[4] = (~a[3] * a[2] * ~a[1] * ~a[0]) * in_enable;
+	assign y[5] = (~a[3] * a[2] * ~a[1] * a[0]) * in_enable;
+	assign y[6] = (~a[3] * a[2] * a[1] * ~a[0]) * in_enable;
+	assign y[7] = (~a[3] * a[2] * a[1] * a[0]) * in_enable;
+	assign y[8] = (a[3] * ~a[2] * ~a[1] * ~a[0]) * in_enable;
+	assign y[9] = (a[3] * ~a[2] * ~a[1] * a[0]) * in_enable;
+	assign y[10] = (a[3] * ~a[2] * a[1] * ~a[0]) * in_enable;
+	assign y[11] = (a[3] * ~a[2] * a[1] * a[0]) * in_enable;
+	assign y[12] = (a[3] * a[2] * ~a[1] * ~a[0]) * in_enable;
+	assign y[13] = (a[3] * a[2] * ~a[1] * a[0]) * in_enable;
+	assign y[14] = (a[3] * a[2] * a[1] * ~a[0]) * in_enable;
+	assign y[15] = (a[3] * a[2] * a[1] * a[0]) * in_enable;
+	
+	//
+	assign out_sig[0] = y[0] | y[2] | y[3] | y[5] | y[6] | y[7] | y[8] | y[9] | y[10] | y[12] | y[14] | y[15];
+	assign out_sig[1] = y[0] | y[1] | y[2] | y[3] | y[4] | y[7] | y[8] | y[9] | y[10] | y[13];
+	assign out_sig[2] = y[0] | y[1] | y[3] | y[4] | y[5] | y[6] | y[7] | y[8] | y[9] | y[10] | y[11] | y[13];
+	assign out_sig[3] = y[0] | y[2] | y[3] | y[5] | y[6] | y[8] | y[9] | y[11] | y[12] | y[13] | y[14];
+	assign out_sig[4] = y[2] | y[6] | y[8] | y[10] | y[11] | y[12] | y[13] | y[14] | y[15];
+	assign out_sig[5] = y[4] | y[5] | y[6] | y[8] | y[9] | y[10] | y[11] | y[12] | y[14] | y[15];
+	assign out_sig[6] = y[2] | y[3] | y[4] | y[5] | y[6] | y[8] | y[9] | y[10] | y[11] | y[13] | y[14] | y[15];
+	
+	
+endmodule 
