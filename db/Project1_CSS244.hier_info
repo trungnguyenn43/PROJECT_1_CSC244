@@ -5,25 +5,47 @@ RES => RES.IN1
 Pen => Pen.IN1
 HFa => HFa.IN1
 Fa => Fa.IN1
-Item << <GND>
-Change[0] << <GND>
-Change[1] << <GND>
-Change[2] << <GND>
-Change[3] << <GND>
-Change[4] << <GND>
-Change[5] << <GND>
-Change[6] << <GND>
-out_CrrState[0] << seven_seg:comb_10.out_sig
-out_CrrState[1] << seven_seg:comb_10.out_sig
-out_CrrState[2] << seven_seg:comb_10.out_sig
-out_CrrState[3] << seven_seg:comb_10.out_sig
-out_CrrState[4] << seven_seg:comb_10.out_sig
-out_CrrState[5] << seven_seg:comb_10.out_sig
-out_CrrState[6] << seven_seg:comb_10.out_sig
-outBits[0] << StateBits:comb_11.O
-outBits[1] << StateBits:comb_11.O
-outBits[2] << StateBits:comb_11.O
-outBits[3] << StateBits:comb_11.O
+Item << OutputLogic:comb_12.Item_out
+Change1[0] << seven_seg:Change1_Seg.out_sig
+Change1[1] << seven_seg:Change1_Seg.out_sig
+Change1[2] << seven_seg:Change1_Seg.out_sig
+Change1[3] << seven_seg:Change1_Seg.out_sig
+Change1[4] << seven_seg:Change1_Seg.out_sig
+Change1[5] << seven_seg:Change1_Seg.out_sig
+Change1[6] << seven_seg:Change1_Seg.out_sig
+Change2[0] << seven_seg:Change2_Seg.out_sig
+Change2[1] << seven_seg:Change2_Seg.out_sig
+Change2[2] << seven_seg:Change2_Seg.out_sig
+Change2[3] << seven_seg:Change2_Seg.out_sig
+Change2[4] << seven_seg:Change2_Seg.out_sig
+Change2[5] << seven_seg:Change2_Seg.out_sig
+Change2[6] << seven_seg:Change2_Seg.out_sig
+Change3[0] << seven_seg:Change3_Seg.out_sig
+Change3[1] << seven_seg:Change3_Seg.out_sig
+Change3[2] << seven_seg:Change3_Seg.out_sig
+Change3[3] << seven_seg:Change3_Seg.out_sig
+Change3[4] << seven_seg:Change3_Seg.out_sig
+Change3[5] << seven_seg:Change3_Seg.out_sig
+Change3[6] << seven_seg:Change3_Seg.out_sig
+DOT << seven_seg:Change1_Seg.dot_out
+out_CrrState[0] << seven_seg:state.out_sig
+out_CrrState[1] << seven_seg:state.out_sig
+out_CrrState[2] << seven_seg:state.out_sig
+out_CrrState[3] << seven_seg:state.out_sig
+out_CrrState[4] << seven_seg:state.out_sig
+out_CrrState[5] << seven_seg:state.out_sig
+out_CrrState[6] << seven_seg:state.out_sig
+out_CrrChange[0] << seven_seg:Fa_Change_Segment.out_sig
+out_CrrChange[1] << seven_seg:Fa_Change_Segment.out_sig
+out_CrrChange[2] << seven_seg:Fa_Change_Segment.out_sig
+out_CrrChange[3] << seven_seg:Fa_Change_Segment.out_sig
+out_CrrChange[4] << seven_seg:Fa_Change_Segment.out_sig
+out_CrrChange[5] << seven_seg:Fa_Change_Segment.out_sig
+out_CrrChange[6] << seven_seg:Fa_Change_Segment.out_sig
+outBits[0] << StateBits:comb_10.O
+outBits[1] << StateBits:comb_10.O
+outBits[2] << StateBits:comb_10.O
+outBits[3] << StateBits:comb_10.O
 
 
 |Project1_CSC244|debouncer:comb_3
@@ -97,6 +119,7 @@ S[0] => S_next.IN1
 S[0] => S_next.IN1
 S[0] => S_next.IN1
 S[0] => S_next.IN1
+S[0] => S_next.IN1
 S[1] => S_next.IN1
 S[1] => S_next.IN1
 S[1] => S_next.IN1
@@ -116,7 +139,6 @@ A[0] => S_next.IN1
 A[0] => S_next.IN1
 A[0] => S_next.IN1
 A[0] => S_next.IN1
-A[0] => S_next.IN0
 A[0] => S_next.IN1
 A[0] => S_next.IN1
 A[0] => S_next.IN1
@@ -129,6 +151,21 @@ A[0] => S_next.IN1
 A[0] => S_next.IN1
 A[0] => S_next.IN1
 A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[0] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
+A[1] => S_next.IN1
 A[1] => S_next.IN1
 A[1] => S_next.IN1
 A[1] => S_next.IN1
@@ -193,7 +230,7 @@ Q <= Q~reg0.DB_MAX_OUTPUT_PORT_TYPE
 Qb <= Qb~reg0.DB_MAX_OUTPUT_PORT_TYPE
 
 
-|Project1_CSC244|seven_seg:comb_10
+|Project1_CSC244|seven_seg:state
 a[0] => Mult3.IN1
 a[0] => Mult6.IN1
 a[0] => Mult9.IN1
@@ -210,6 +247,10 @@ a[2] => Mult11.IN1
 a[2] => Mult1.IN0
 a[3] => Mult11.IN0
 a[3] => Mult1.IN1
+dot[0] => ~NO_FANOUT~
+dot[1] => ~NO_FANOUT~
+dot[2] => ~NO_FANOUT~
+dot[3] => ~NO_FANOUT~
 out_sig[0] <= Mult14.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[1] <= Mult15.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[2] <= Mult16.DB_MAX_OUTPUT_PORT_TYPE
@@ -217,9 +258,16 @@ out_sig[3] <= Mult17.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[4] <= Mult18.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[5] <= Mult19.DB_MAX_OUTPUT_PORT_TYPE
 out_sig[6] <= Mult20.DB_MAX_OUTPUT_PORT_TYPE
+dot_out[0] <= <GND>
+dot_out[1] <= <GND>
+dot_out[2] <= <GND>
+dot_out[3] <= <GND>
+dot_out[4] <= <GND>
+dot_out[5] <= <GND>
+dot_out[6] <= <GND>
 
 
-|Project1_CSC244|StateBits:comb_11
+|Project1_CSC244|StateBits:comb_10
 I[0] => O[0].DATAIN
 I[1] => O[1].DATAIN
 I[2] => O[2].DATAIN
@@ -228,5 +276,197 @@ O[0] <= I[0].DB_MAX_OUTPUT_PORT_TYPE
 O[1] <= I[1].DB_MAX_OUTPUT_PORT_TYPE
 O[2] <= I[2].DB_MAX_OUTPUT_PORT_TYPE
 O[3] <= I[3].DB_MAX_OUTPUT_PORT_TYPE
+
+
+|Project1_CSC244|decoder4_16:comb_11
+A[0] => Case[2].IN1
+A[0] => Case[3].IN1
+A[0] => Case[1].IN1
+A[1] => Case.IN1
+A[1] => Case.IN1
+A[2] => Case.IN0
+A[2] => Case.IN0
+A[3] => Case.IN1
+A[3] => Case.IN1
+SG1[0] <= <GND>
+SG1[1] <= <GND>
+SG1[2] <= <GND>
+SG1[3] <= <GND>
+SG2[0] <= SG2.DB_MAX_OUTPUT_PORT_TYPE
+SG2[1] <= SG2.DB_MAX_OUTPUT_PORT_TYPE
+SG2[2] <= SG2.DB_MAX_OUTPUT_PORT_TYPE
+SG2[3] <= <GND>
+SG3[0] <= SG3.DB_MAX_OUTPUT_PORT_TYPE
+SG3[1] <= <GND>
+SG3[2] <= SG3.DB_MAX_OUTPUT_PORT_TYPE
+SG3[3] <= <GND>
+dot <= <GND>
+
+
+|Project1_CSC244|seven_seg:Change1_Seg
+a[0] => Mult3.IN1
+a[0] => Mult6.IN1
+a[0] => Mult9.IN1
+a[0] => Mult13.IN1
+a[0] => Mult0.IN0
+a[0] => Mult4.IN0
+a[0] => Mult7.IN0
+a[0] => Mult10.IN0
+a[1] => Mult5.IN1
+a[1] => Mult12.IN1
+a[1] => Mult2.IN1
+a[1] => Mult8.IN0
+a[2] => Mult11.IN1
+a[2] => Mult1.IN0
+a[3] => Mult11.IN0
+a[3] => Mult1.IN1
+dot[0] => ~NO_FANOUT~
+dot[1] => ~NO_FANOUT~
+dot[2] => ~NO_FANOUT~
+dot[3] => ~NO_FANOUT~
+out_sig[0] <= Mult14.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[1] <= Mult15.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[2] <= Mult16.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[3] <= Mult17.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[4] <= Mult18.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[5] <= Mult19.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[6] <= Mult20.DB_MAX_OUTPUT_PORT_TYPE
+dot_out[0] <= <GND>
+dot_out[1] <= <GND>
+dot_out[2] <= <GND>
+dot_out[3] <= <GND>
+dot_out[4] <= <GND>
+dot_out[5] <= <GND>
+dot_out[6] <= <GND>
+
+
+|Project1_CSC244|seven_seg:Change2_Seg
+a[0] => Mult3.IN1
+a[0] => Mult6.IN1
+a[0] => Mult9.IN1
+a[0] => Mult13.IN1
+a[0] => Mult0.IN0
+a[0] => Mult4.IN0
+a[0] => Mult7.IN0
+a[0] => Mult10.IN0
+a[1] => Mult5.IN1
+a[1] => Mult12.IN1
+a[1] => Mult2.IN1
+a[1] => Mult8.IN0
+a[2] => Mult11.IN1
+a[2] => Mult1.IN0
+a[3] => Mult11.IN0
+a[3] => Mult1.IN1
+dot[0] => ~NO_FANOUT~
+dot[1] => ~NO_FANOUT~
+dot[2] => ~NO_FANOUT~
+dot[3] => ~NO_FANOUT~
+out_sig[0] <= Mult14.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[1] <= Mult15.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[2] <= Mult16.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[3] <= Mult17.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[4] <= Mult18.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[5] <= Mult19.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[6] <= Mult20.DB_MAX_OUTPUT_PORT_TYPE
+dot_out[0] <= <GND>
+dot_out[1] <= <GND>
+dot_out[2] <= <GND>
+dot_out[3] <= <GND>
+dot_out[4] <= <GND>
+dot_out[5] <= <GND>
+dot_out[6] <= <GND>
+
+
+|Project1_CSC244|seven_seg:Change3_Seg
+a[0] => Mult3.IN1
+a[0] => Mult6.IN1
+a[0] => Mult9.IN1
+a[0] => Mult13.IN1
+a[0] => Mult0.IN0
+a[0] => Mult4.IN0
+a[0] => Mult7.IN0
+a[0] => Mult10.IN0
+a[1] => Mult5.IN1
+a[1] => Mult12.IN1
+a[1] => Mult2.IN1
+a[1] => Mult8.IN0
+a[2] => Mult11.IN1
+a[2] => Mult1.IN0
+a[3] => Mult11.IN0
+a[3] => Mult1.IN1
+dot[0] => ~NO_FANOUT~
+dot[1] => ~NO_FANOUT~
+dot[2] => ~NO_FANOUT~
+dot[3] => ~NO_FANOUT~
+out_sig[0] <= Mult14.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[1] <= Mult15.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[2] <= Mult16.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[3] <= Mult17.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[4] <= Mult18.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[5] <= Mult19.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[6] <= Mult20.DB_MAX_OUTPUT_PORT_TYPE
+dot_out[0] <= <GND>
+dot_out[1] <= <GND>
+dot_out[2] <= <GND>
+dot_out[3] <= <GND>
+dot_out[4] <= <GND>
+dot_out[5] <= <GND>
+dot_out[6] <= <GND>
+
+
+|Project1_CSC244|OutputLogic:comb_12
+A[0] => Case[0].IN1
+A[0] => Case[2].IN1
+A[0] => Case[3].IN1
+A[0] => Case[1].IN1
+A[1] => Case.IN1
+A[1] => Case.IN1
+A[1] => Case.IN1
+A[2] => Case.IN0
+A[2] => Case.IN0
+A[3] => Case.IN1
+A[3] => Case.IN1
+Item_out <= Item_out.DB_MAX_OUTPUT_PORT_TYPE
+ChangeBit_out[0] <= ChangeBit_out.DB_MAX_OUTPUT_PORT_TYPE
+ChangeBit_out[1] <= ChangeBit_out.DB_MAX_OUTPUT_PORT_TYPE
+ChangeBit_out[2] <= <GND>
+ChangeBit_out[3] <= <GND>
+
+
+|Project1_CSC244|seven_seg:Fa_Change_Segment
+a[0] => Mult3.IN1
+a[0] => Mult6.IN1
+a[0] => Mult9.IN1
+a[0] => Mult13.IN1
+a[0] => Mult0.IN0
+a[0] => Mult4.IN0
+a[0] => Mult7.IN0
+a[0] => Mult10.IN0
+a[1] => Mult5.IN1
+a[1] => Mult12.IN1
+a[1] => Mult2.IN1
+a[1] => Mult8.IN0
+a[2] => Mult11.IN1
+a[2] => Mult1.IN0
+a[3] => Mult11.IN0
+a[3] => Mult1.IN1
+dot[0] => ~NO_FANOUT~
+dot[1] => ~NO_FANOUT~
+dot[2] => ~NO_FANOUT~
+dot[3] => ~NO_FANOUT~
+out_sig[0] <= Mult14.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[1] <= Mult15.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[2] <= Mult16.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[3] <= Mult17.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[4] <= Mult18.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[5] <= Mult19.DB_MAX_OUTPUT_PORT_TYPE
+out_sig[6] <= Mult20.DB_MAX_OUTPUT_PORT_TYPE
+dot_out[0] <= <GND>
+dot_out[1] <= <GND>
+dot_out[2] <= <GND>
+dot_out[3] <= <GND>
+dot_out[4] <= <GND>
+dot_out[5] <= <GND>
+dot_out[6] <= <GND>
 
 

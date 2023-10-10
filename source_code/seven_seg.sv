@@ -1,6 +1,6 @@
 
-module seven_seg(input logic [3:0] a,
-	output logic [6:0] out_sig);
+module seven_seg(input logic [3:0] a, dot,
+	output logic [6:0] out_sig, dot_out);
 	
 	logic [15:0] y;
 	

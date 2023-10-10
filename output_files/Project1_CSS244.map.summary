@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Sun Oct  8 23:12:18 2023
+Analysis & Synthesis Status : Successful - Mon Oct  9 21:10:29 2023
 Quartus Prime Version : 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 Revision Name : Project1_CSS244
 Top-level Entity Name : Project1_CSC244
 Family : MAX 10
-Total logic elements : 78
-    Total combinational functions : 78
+Total logic elements : 90
+    Total combinational functions : 90
     Dedicated logic registers : 38
 Total registers : 38
-Total pins : 25
+Total pins : 47
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

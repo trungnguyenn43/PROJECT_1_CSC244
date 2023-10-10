@@ -1,5 +1,5 @@
 Flow report for Project1_CSS244
-Sun Oct  8 23:12:33 2023
+Mon Oct  9 21:10:49 2023
 Quartus Prime Version 22.1std.0 Build 915 10/25/2022 SC Lite Edition
 
 
@@ -41,18 +41,18 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------------------------------------------------------+
 ; Flow Summary                                                                        ;
 +------------------------------------+------------------------------------------------+
-; Flow Status                        ; Successful - Sun Oct  8 23:12:30 2023          ;
+; Flow Status                        ; Successful - Mon Oct  9 21:10:46 2023          ;
 ; Quartus Prime Version              ; 22.1std.0 Build 915 10/25/2022 SC Lite Edition ;
 ; Revision Name                      ; Project1_CSS244                                ;
 ; Top-level Entity Name              ; Project1_CSC244                                ;
 ; Family                             ; MAX 10                                         ;
 ; Device                             ; 10M50DAF484C7G                                 ;
 ; Timing Models                      ; Final                                          ;
-; Total logic elements               ; 88 / 49,760 ( < 1 % )                          ;
-;     Total combinational functions  ; 79 / 49,760 ( < 1 % )                          ;
+; Total logic elements               ; 101 / 49,760 ( < 1 % )                         ;
+;     Total combinational functions  ; 91 / 49,760 ( < 1 % )                          ;
 ;     Dedicated logic registers      ; 38 / 49,760 ( < 1 % )                          ;
 ; Total registers                    ; 38                                             ;
-; Total pins                         ; 25 / 360 ( 7 % )                               ;
+; Total pins                         ; 47 / 360 ( 13 % )                              ;
 ; Total virtual pins                 ; 0                                              ;
 ; Total memory bits                  ; 0 / 1,677,312 ( 0 % )                          ;
 ; Embedded Multiplier 9-bit elements ; 0 / 288 ( 0 % )                                ;
@@ -67,7 +67,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 10/08/2023 23:12:10 ;
+; Start date & time ; 10/09/2023 21:10:20 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; Project1_CSS244     ;
 +-------------------+---------------------+
@@ -78,7 +78,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+-----------------+-----------------+------------+
 ; Assignment Name                     ; Value                                  ; Default Value   ; Entity Name     ; Section Id ;
 +-------------------------------------+----------------------------------------+-----------------+-----------------+------------+
-; COMPILER_SIGNATURE_ID               ; 300154790939.169682473005132           ; --              ; --              ; --         ;
+; COMPILER_SIGNATURE_ID               ; 2499178046491.169690382008524          ; --              ; --              ; --         ;
 ; MAX_CORE_JUNCTION_TEMP              ; 85                                     ; --              ; --              ; --         ;
 ; MIN_CORE_JUNCTION_TEMP              ; 0                                      ; --              ; --              ; --         ;
 ; PARTITION_COLOR                     ; -- (Not supported for targeted family) ; --              ; Project1_CSC244 ; Top        ;
@@ -94,11 +94,11 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:08     ; 1.0                     ; 4774 MB             ; 00:00:08                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 5639 MB             ; 00:00:05                           ;
-; Assembler            ; 00:00:02     ; 1.0                     ; 4724 MB             ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4846 MB             ; 00:00:01                           ;
-; Total                ; 00:00:21     ; --                      ; --                  ; 00:00:16                           ;
+; Analysis & Synthesis ; 00:00:10     ; 1.0                     ; 4774 MB             ; 00:00:08                           ;
+; Fitter               ; 00:00:11     ; 1.0                     ; 5642 MB             ; 00:00:06                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 4719 MB             ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:02     ; 1.0                     ; 4847 MB             ; 00:00:02                           ;
+; Total                ; 00:00:26     ; --                      ; --                  ; 00:00:18                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 

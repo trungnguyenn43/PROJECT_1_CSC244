@@ -4,6 +4,46 @@
 			"name" : "Top",
 			"pins" : [
 				{
+					"name" : "Item",
+					"strict" : false
+				},
+				{
+					"name" : "Change2[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Change2[2]",
+					"strict" : false
+				},
+				{
+					"name" : "Change2[3]",
+					"strict" : false
+				},
+				{
+					"name" : "Change2[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Change2[5]",
+					"strict" : false
+				},
+				{
+					"name" : "Change2[6]",
+					"strict" : false
+				},
+				{
+					"name" : "Change3[1]",
+					"strict" : false
+				},
+				{
+					"name" : "Change3[4]",
+					"strict" : false
+				},
+				{
+					"name" : "Change3[6]",
+					"strict" : false
+				},
+				{
 					"name" : "out_CrrState[0]",
 					"strict" : false
 				},
@@ -32,6 +72,30 @@
 					"strict" : false
 				},
 				{
+					"name" : "out_CrrChange[0]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrChange[2]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrChange[3]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrChange[4]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrChange[5]",
+					"strict" : false
+				},
+				{
+					"name" : "out_CrrChange[6]",
+					"strict" : false
+				},
+				{
 					"name" : "outBits[0]",
 					"strict" : false
 				},
@@ -48,15 +112,15 @@
 					"strict" : false
 				},
 				{
-					"name" : "HFa",
-					"strict" : false
-				},
-				{
 					"name" : "Pen",
 					"strict" : false
 				},
 				{
 					"name" : "Fa",
+					"strict" : false
+				},
+				{
+					"name" : "HFa",
 					"strict" : false
 				},
 				{

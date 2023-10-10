@@ -3,27 +3,27 @@ Timing Analyzer Summary
 ------------------------------------------------------------
 
 Type  : Slow 1200mV 85C Model Setup 'CLK50MHZ'
-Slack : -4.032
-TNS   : -112.217
+Slack : -4.122
+TNS   : -111.344
 
 Type  : Slow 1200mV 85C Model Setup 'debouncer:comb_3|A'
-Slack : -2.054
-TNS   : -6.546
+Slack : -2.261
+TNS   : -7.498
 
 Type  : Slow 1200mV 85C Model Hold 'CLK50MHZ'
-Slack : 0.628
+Slack : 0.616
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Hold 'debouncer:comb_3|A'
-Slack : 0.834
+Slack : 0.900
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Recovery 'debouncer:comb_3|A'
-Slack : -0.839
-TNS   : -3.356
+Slack : -0.731
+TNS   : -2.924
 
 Type  : Slow 1200mV 85C Model Removal 'debouncer:comb_3|A'
-Slack : 1.218
+Slack : 1.128
 TNS   : 0.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'CLK50MHZ'
@@ -35,27 +35,27 @@ Slack : -1.403
 TNS   : -5.612
 
 Type  : Slow 1200mV 0C Model Setup 'CLK50MHZ'
-Slack : -3.679
-TNS   : -101.452
+Slack : -3.768
+TNS   : -100.640
 
 Type  : Slow 1200mV 0C Model Setup 'debouncer:comb_3|A'
-Slack : -1.777
-TNS   : -5.628
+Slack : -2.025
+TNS   : -6.652
 
 Type  : Slow 1200mV 0C Model Hold 'CLK50MHZ'
-Slack : 0.580
+Slack : 0.571
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Hold 'debouncer:comb_3|A'
-Slack : 0.760
+Slack : 0.840
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Recovery 'debouncer:comb_3|A'
-Slack : -0.773
-TNS   : -3.092
+Slack : -0.709
+TNS   : -2.836
 
 Type  : Slow 1200mV 0C Model Removal 'debouncer:comb_3|A'
-Slack : 1.217
+Slack : 1.128
 TNS   : 0.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'CLK50MHZ'
@@ -67,32 +67,32 @@ Slack : -1.403
 TNS   : -5.612
 
 Type  : Fast 1200mV 0C Model Setup 'CLK50MHZ'
-Slack : -1.230
-TNS   : -28.674
+Slack : -1.253
+TNS   : -28.062
 
 Type  : Fast 1200mV 0C Model Setup 'debouncer:comb_3|A'
-Slack : -0.313
-TNS   : -0.758
+Slack : -0.308
+TNS   : -0.891
 
 Type  : Fast 1200mV 0C Model Hold 'CLK50MHZ'
-Slack : 0.243
+Slack : 0.237
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Hold 'debouncer:comb_3|A'
-Slack : 0.342
+Slack : 0.358
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Recovery 'debouncer:comb_3|A'
-Slack : -0.061
-TNS   : -0.244
+Slack : 0.012
+TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Removal 'debouncer:comb_3|A'
-Slack : 0.705
+Slack : 0.621
 TNS   : 0.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'CLK50MHZ'
 Slack : -3.000
-TNS   : -38.213
+TNS   : -38.198
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'debouncer:comb_3|A'
 Slack : -1.000
